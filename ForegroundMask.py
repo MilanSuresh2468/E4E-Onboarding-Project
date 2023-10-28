@@ -26,14 +26,6 @@ while vidCap.isOpened():
     if cv.waitKey(1)& 0xFF==ord('q'):
             break
 
-    
-
-    
-
-
-
-
-
 #release vid capture
 cv.destroyAllWindows()
 vidCap.release()
