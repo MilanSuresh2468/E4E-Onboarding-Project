@@ -7,7 +7,7 @@ vidCap = cv.VideoCapture('aboveground.mp4')
 #initialize background subtractors - KNN and MOG2
 #KNN - finds k-nearest neighbors in training data and either assigns a label based on that or an average
 BS_KNN = cv.createBackgroundSubtractorKNN()
-#MOG2 - models background as gaussian distributions - finds deviations from model to create foreground
+#MOG2 - models background as gaussian distributions - Creates foreground by finding deviations
 BS_MOG2 = cv.createBackgroundSubtractorMOG2()
 
 while vidCap.isOpened():
